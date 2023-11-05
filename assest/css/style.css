@@ -1,0 +1,88 @@
+/* font link start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* /font link end */
+
+
+/* astric start */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* astric end */
+
+/* color section start */
+.bg-blue {
+    background: #131e3a;
+}
+
+.bg-danger2 {
+    background: #ff1c54;
+}
+
+.bg-danger3 {
+    background: #5c327a;
+}
+
+.bg-danger4 {
+    background: #ff1c54;
+}
+
+.bg-warning2 {
+    background: #fa9005;
+}
+
+.text-danger2 {
+    color: #ff1c54 !important;
+}
+
+.text-success2 {
+    color: #a0e224;
+}
+
+.text-dark2 {
+    color: #161616;
+}
+
+.top-10 {
+    top: 10%;
+}
+
+.top-15 {
+    top: 15%;
+}
+
+.top-20 {
+    top: 20%;
+}
+
+/* /color section end */
+
+
+
+/* Banner Section start */
+.banner {
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/background\ heart.jpg);
+    background-size: 100% 100%;
+}
+
+/* /Banner Section end */
+
+
+
+
+
+/* media screen start */
+@media screen and (max-width:575px) {
+    .top-15 {
+        top: 10%
+    }
+}
+
+/* /media screen end*/
