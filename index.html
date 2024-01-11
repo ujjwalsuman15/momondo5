@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Cheap Flight to Page | momondo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assest/css/style.css">
+    <link rel="shortcut icon" href="./assest/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header section start -->
+    <nav class="navbar navbar-expand-lg bg-blue">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assest/img/momondo logo.png" class="img-fluid" alt="momondologo" width="200px">
+            </a>
+            <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-bars text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger2 fw-bold" aria-current="page"
+                            href="javascript:void()">Flight</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light " href="javascript:void()">Hotel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="javascript:void()">Car Hire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="javascript:void()">Inspiration</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                English(GBP)
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success2" href="javascript:void()">Log In</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- /header section end -->
+
+    <!-- Banner Section start -->
+    <section class="banner position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-lg-7 text-light ms-0 ms-sm-4 position-absolute top-15">
+                    <h1>
+                        " Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                    </h1>
+                    <p class="fw-bold fs-1 mt-4">
+                        -every single time
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 col-sm-9 col-md-10 position-absolute bottom-0 mb-4 ms-3 ms-sm-0 bg-danger3 rounded">
+                    <nav class="mb-2">
+                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                            <button class="nav-link rounded-0 active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">
+                                <i class="fa-solid fa-plane-departure text-danger2"></i>Flight
+                            </button>
+                            <button class="nav-link rounded-0" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">
+                                <i class="fa-solid fa-shop"></i>Hotels
+                            </button>
+                            <button class="nav-link rounded-0" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">
+                                <i class="fa-solid fa-car"></i> Cars
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+                            <form action="">
+                                <div class="row g-1">
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="Enter origin-city"
+                                            aria-label="origin">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="destination-city"
+                                            aria-label="destination">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="date" class="form-control" placeholder="Enter start-date"
+                                            aria-label=" start">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="date" class="form-control" placeholder="Enter end-date"
+                                            aria-label=" end">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="passenger"
+                                            aria-label="Last name">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="button" class="form-control rounded-sm-circle" value="search"
+                                            aria-label="search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">
+                            <form action="">
+                                <div class="row g-1">
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="Enter origin-city"
+                                            aria-label="origin">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="destination-city"
+                                            aria-label="destination">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="date" class="form-control" placeholder="Enter start-date"
+                                            aria-label=" start">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="date" class="form-control" placeholder="Enter end-date"
+                                            aria-label=" end">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="passenger"
+                                            aria-label="Last name">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="button" class="form-control rounded-sm-circle" value="search"
+                                            aria-label="search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                            tabindex="0">
+                            <form action="">
+                                <div class="row g-1">
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="Enter origin-city"
+                                            aria-label="origin">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="destination-city"
+                                            aria-label="destination">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="date" class="form-control" placeholder="Enter start-date"
+                                            aria-label=" start">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="date" class="form-control" placeholder="Enter end-date"
+                                            aria-label=" end">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="passenger"
+                                            aria-label="Last name">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="button" class="form-control rounded-sm-circle" value="search"
+                                            aria-label="search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Banner Section end -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/main.js"></script>
+</body>
+
+</html>
