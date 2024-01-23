@@ -215,31 +215,43 @@ footer .container .row p {
     font-size: 14px;
 }
 
-
-footer .container .down .col-md-9 ul {
-    display: flex;
-    margin-bottom: 0rem;
-    padding-left: 0rem;
+footer .bottom {
+    margin-bottom: 0px;
 }
 
-footer .container .down .col-md-9 ul li,
-footer .container .down .col-md-2 ul li {
-    list-style: none;
-    padding-right: 6px;
+footer .bottom li {
+    padding-right: 21px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-footer .container .down .col-md-2 ul {
-    display: flex;
+footer li a:hover {
+    color: #fff !important;
 }
 
+footer .bottom li:hover {
+    color: #fff;
+}
+
+.ico {
+    transition: all 0.9s ease !important;
+}
+
+.ico:hover {
+    transform: rotate(360deg);
+}
+
+.iconlist .ic:hover {
+    color: #fff !important;
+}
 
 
 /* /Footer Section end */
 
+/* ============================================== RESPONSIVE DIMENSIONS =============================================== */
+/* ==================================================================================================================== */
 
 
-
-/* media screen start */
 @media screen and (min-width:992px) {
     .circle {
         height: 80px;
@@ -281,13 +293,13 @@ footer .container .down .col-md-2 ul {
     .estimate .position-absolute img {
         display: none;
     }
-}
-
-@media screen and (max-width:767px) {
-    footer .container .down .col-md-9 ul li{
-        padding-right: 0px;
+    footer .bottom li {
+        padding-right: 4px;
+        font-size: 14px !important;
     }
 }
+
+
 
 @media screen and (max-width:575px) {
     .top-15 {
@@ -323,12 +335,6 @@ footer .container .down .col-md-2 ul {
         text-align: center;
     }
 
-    footer .container .down .col-md-9 ul,
-    footer .container .down .col-md-2 ul {
-        display: block;
-    }
-
-
 }
 
 @media screen and (max-width:320px) {
@@ -338,5 +344,3 @@ footer .container .down .col-md-2 ul {
         margin: 0px auto;
     }
 }
-
-/* /media screen end*/
