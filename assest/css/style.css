@@ -59,6 +59,18 @@
     top: 20%;
 }
 
+.w-10 {
+    width: 15%;
+}
+
+.bg-purple {
+    background: #1F172F;
+}
+
+.fa-bold:before {
+    display: none;
+}
+
 /* /color section end */
 
 
@@ -117,6 +129,113 @@ div.col-lg-4.col-md-12.col-sm-12 {
 /* /Banner Section end */
 
 
+/* Fun Section start */
+.fun {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/fun.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+/* /Fun Section end */
+
+
+/* /* Newsletters Section start */
+.newsletters {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/news3.jpg);
+    background-size: cover;
+}
+
+.col-lg-8 form input {
+    background: #2A2439;
+    height: 40px;
+    color: #fff;
+}
+
+.col-lg-8 form ::placeholder,
+.col-lg-8 form value {
+    color: #fff;
+    padding-left: 10px;
+}
+
+/* /Newsletters Section end  */
+
+
+/* Destination Section start */
+.card-body p {
+    font-size: 14px;
+}
+
+/* /Destination Section end  */
+
+
+/* Estimate Section start */
+hr {
+    margin: 0px 0px 10px 0px;
+    opacity: 100%;
+}
+
+
+.estimate form label {
+    display: none;
+}
+
+/* /Estimate Section end  */
+
+/* Blog Section start */
+.row .col-lg-6 .row .col-sm-8 p {
+    margin-bottom: 0rem;
+}
+
+.row .col-lg-6 .row .col-sm-8 p+p+hr+p {
+    font-size: 14px;
+}
+
+/* /Blog Section end */
+
+/* Footer Section start */
+footer {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/footer.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+footer .container .row h4 {
+    margin-bottom: 15px;
+}
+
+footer .container .row p {
+    margin-bottom: 0rem;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+footer .container .down .col-md-9 ul {
+    display: flex;
+    margin-bottom: 0rem;
+    padding-left: 0rem;
+}
+
+footer .container .down .col-md-9 ul li,
+footer .container .down .col-md-2 ul li {
+    list-style: none;
+    padding-right: 6px;
+}
+
+footer .container .down .col-md-2 ul {
+    display: flex;
+}
+
+
+
+/* /Footer Section end */
+
 
 
 
@@ -143,16 +262,73 @@ div.col-lg-4.col-md-12.col-sm-12 {
     }
 }
 
+@media screen and (max-width:1199px) {
+    .fs-s {
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width:991px) {
     .font-awesome {
         display: none;
+    }
+
+    .estimate form select,
+    .estimate form input {
+        margin: 0px 20px 20px 0px;
+    }
+
+    .estimate .position-absolute img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    footer .container .down .col-md-9 ul li{
+        padding-right: 0px;
     }
 }
 
 @media screen and (max-width:575px) {
     .top-15 {
-        top: 10%
+        top: 3%
     }
+
+    .top-15 h1 {
+        font-size: 18px;
+    }
+
+    .top-15>p.mt-4 {
+        margin-top: 0rem !important;
+    }
+
+    .estimate form select,
+    .estimate form input {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .col-sm-4 .img-fluid {
+        width: 100%;
+    }
+
+    footer .container .row {
+        padding: 0px 5px 0px 20px;
+    }
+
+    footer .container .row p {
+        font-size: 12px;
+    }
+
+    footer .container .row h4 {
+        text-align: center;
+    }
+
+    footer .container .down .col-md-9 ul,
+    footer .container .down .col-md-2 ul {
+        display: block;
+    }
+
+
 }
 
 @media screen and (max-width:320px) {
